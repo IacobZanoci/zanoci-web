@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://kit.fontawesome.com/9f7069946e.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/stylesContact.css">
+        <script defer src="javascript/activePage.js"></script>
+
+        <title>ZANOCI - Contact</title>
+        <link rel="icon" type="image/x-icon" href="/images/tabIcon.png">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <div class="nav_logo"><a class="navbar_logo" href="index.html"><img class="navbar_logo_img" src="images/zanoci_logo_header.png"></a></div>
+                    <ul class="nav_links">
+                        <li><a class="li_nav_links" href="/index.html">Home</a></li>
+                        <li><a class="li_nav_links" href="/about.html">About</a></li>
+                        <li><a class="li_nav_links" href="/works.html">Works</a></li>
+                        <li><a class="li_nav_links" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="action_btn">Say Hello</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+
+                <nav class="dropdown_menu">
+                    <li><a class="dropdown_menu_a" href="index.html">Home</a></li>
+                    <li><a class="dropdown_menu_a" href="about.html">About</a></li>
+                    <li><a class="dropdown_menu_a" href="works.html">Works</a></li>
+                    <li><a href="contact.html" class="action_btn dropdown_menu_btn">Say Hello</a></li>
+                </nav>
+            </div>
+        </header>
+
+        <section class="contact_form">
+            <div class="container">
+                <div class="contact_container">
+                    <div class="box_left">
+                        <ul>
+                            <li data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+                                <h1 class="letf_label" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">Let’s chat.<br/><span class="left_label_shade">Tell me about your <br/>project.</span></h1>
+                                <span class="complete_heading">Tell me about your project.</span>
+                            </li>
+                            <li>
+                                <h3 class="left_heading" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">Let’s create something together</h3>
+                            </li>
+                            <li>
+                                <a href="mailto:iacobzanoci.work@gmail.com" class="btn btn--contact">
+                                    <div class="mail_box" data-aos="flip-left" data-aos-once="true" data-aos-duration="1000">
+                                        <div class="mail_icon">
+                                            <img src="images/contactBox/envelope.png" alt="mail">
+                                        </div>
+                                        <div class="mail_at_info">
+                                            <h5 class="mail_at_title">Mail me at</h5>
+                                            <a href="mailto:iacobzanoci.work@gmail.com"><h4 class="email_adress">iacobzanoci.work@gmail.com</h4></a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box_right" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+                        <form onsubmit="return false">
+                            <h2 class="right_title">Let's work together</h2>
+                            <input class="user_input" type="text" id="sendername" name="name" required placeholder="Full name*">
+                            <input class="user_input" type="email" id="to" name="email" required placeholder="Email adress*">
+                            <input class="user_input" type="text" id="subject" name="subject" placeholder="Subject">
+                            <textarea class="user_input" name="message" id="message" rows="4" placeholder="Your Message*"></textarea>
+                            <button  onclick="sendMail();" class="button_email_submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="alert hide">
+            <span class="fa-solid fa-circle-check"></span>
+            <span class="msg">Success: Email sent successfully!</span>
+            <span class="close-btn">
+                <span class="fas fa-times"></span>
+            </span>
+        </div>
+
+        <footer class="footer_contact">
+            <div class="container">
+                <div class="footer_content_st">
+                    <div class="about_brand">
+                        <div class="footer_logo"><a href="index.html"><img class="footer_logo_img" src="images/footer_logo.svg"></a></div>
+                        <div class="footer_line_vertical"></div>
+                        <div class="footer_heading"><p class="footer_heading_p">A Designer & Front-End Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.</p></div>
+                    </div>
+                    <div class="footer_social">
+                        <ul class="footer_social_ul">
+                            <li><a href="https://md.linkedin.com/in/iacob-zanoci-50127920b" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-regular fa-envelope"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="footer_content_nd">
+                    <div class="footer_line_horizontal"></div>
+                    <div class="footer_creator"><p class="footer_creator_p">Created by ©Zanoci Iacob.</p></div>
+                </div>
+            </div>
+        </footer>
+        
+
+    <script src="javascript/contact.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
+</html>
