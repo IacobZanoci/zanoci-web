@@ -1265,9 +1265,13 @@ header {
         display: block;
     }
 
+    header {
+        padding-top: 1rem;
+    }
+
     /* WELCOME SECTION - ABOUT */
     .welcome_content {
-        margin-top: 7rem;
+        margin-top: 5.5rem;
     }
 
     .welcome_title {
@@ -1693,7 +1697,12 @@ header {
     }
 
     /* WELCOME SECTION */
-
+    .home_welcome_img {
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1.3);
+        margin-top: 5rem;
+    }
 
     /* DROP-DOWN MENU SECTION */
     .dropdown_menu.open {
