@@ -653,6 +653,10 @@ html,body {
     }
 
     /* HEADER */
+    header {
+        padding-top: 1rem;
+    }
+
     .li_nav_links {
         font-size: 1.05rem;
     }
@@ -952,10 +956,23 @@ html,body {
         margin: 0 auto;
     }
 
+    /**/
+
+    /* NAVBAR */
+    .navbar {
+        align-items: start;
+    }
+
+    .navbar_logo_img {
+        width: 7rem;
+    }
+
     /* DROP-DOWN MENU SECTION */
     .dropdown_menu.open {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
+
+    /**/
 
     /* CONTACT FORM */
     .complete_heading {
