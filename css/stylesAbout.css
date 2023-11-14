@@ -765,6 +765,10 @@ a:is(:link, :active, :visited).active_nav_link {
     }
 
     /* HEADER */
+    header {
+        padding-top: 1rem;
+    }
+
     .li_nav_links {
         font-size: 1.05rem;
     }
@@ -1088,10 +1092,23 @@ a:is(:link, :active, :visited).active_nav_link {
         margin: 0 auto;
     }
 
+   /**/
+
+    /* NAVBAR */
+    .navbar {
+        align-items: start;
+    }
+
+    .navbar_logo_img {
+        width: 7rem;
+    }
+
     /* DROP-DOWN MENU SECTION */
     .dropdown_menu.open {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
+
+    /**/
 
     /* INTRO SECTION */
     .intro_resume_content {
