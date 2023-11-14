@@ -1514,6 +1514,10 @@ header {
         width: 100%;
     }
 
+    .welcome_title {
+        font-size: 2.2rem;
+    }
+
     /* RESUME SECTION - DESIGNER & DEV*/
     .about_des_dev {
         display: block;
@@ -1695,6 +1699,23 @@ header {
         width: 95%;
         margin: 0 auto;
     }
+    /**/
+
+    /* NAVBAR */
+    .navbar {
+        align-items: start;
+    }
+
+    .navbar_logo_img {
+        width: 7rem;
+    }
+
+    /* DROP-DOWN MENU SECTION */
+    .dropdown_menu.open {
+        margin-top: 3rem;
+    }
+
+    /**/
 
     /* WELCOME SECTION */
     .home_welcome_img {
@@ -1704,9 +1725,18 @@ header {
         margin-top: 5rem;
     }
 
-    /* DROP-DOWN MENU SECTION */
-    .dropdown_menu.open {
-        margin-top: 2rem;
+    .welcome_title {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .welcome_heading {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .wel_arrow_down {
+        display: none;
     }
 
     /* RESUME SECTION */
@@ -1762,7 +1792,7 @@ header {
 
     /* COLLABORATE SECTION */
     .collaborate_title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .collaborate_heading {
