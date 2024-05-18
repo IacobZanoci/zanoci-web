@@ -37,6 +37,19 @@ secondReadMore.addEventListener("click", () => {
     }
 });
 
+// Target the 3th paragraph with the unique class
+const threeParagraph = document.querySelector(".three-paragraph");
+const threeReadMore = threeParagraph.querySelector(".read-more");
+
+threeReadMore.addEventListener("click", () => {
+    threeParagraph.classList.toggle("expanded");
+    if (threeParagraph.classList.contains("expanded")) {
+        threeReadMore.textContent = " -> Show Less";
+    } else {
+        threeReadMore.textContent = " -> more";
+    }
+});
+
 
 
 
