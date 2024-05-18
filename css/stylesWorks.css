@@ -212,8 +212,18 @@ a:is(:link, :active, :visited).active_nav_link {
     background: linear-gradient(90deg, #353537 0%, #1D1D1F 100%);
 }
 
+.works_company_container_mparking {
+    background: linear-gradient(90deg, #236DF6 0%, #387CFA 100%);
+}
+
 .disrupt_group_logo {
     max-width: 75%;
+}
+
+.inProcessIcon {
+    width: 14px;
+    margin-left: 14px;
+    margin-top: 4px;
 }
 
 .works_company_info {
