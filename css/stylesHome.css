@@ -595,6 +595,12 @@ header {
     visibility: visible;
 }
 
+.inProcessIcon {
+    width: 14px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
 .works_card_contact {
     width: 31%;
     height: 17.5rem;
@@ -1578,6 +1584,10 @@ header {
         margin-top: 2rem;
         width: 350px;
         height: 230px;
+    }
+
+    .works_card_business_ndd {
+        margin-top: 2rem;
     }
 
     .works_card_contact_nd {
