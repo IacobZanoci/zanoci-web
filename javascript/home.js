@@ -16,9 +16,9 @@ function adjustHeader() {
     var welcomeTitle = document.querySelector('.welcome_title');
 
     if (viewportWidth <= 640) {
-        welcomeTitle.innerHTML = 'Designer & <span class="h1_gradient">Developer</span>';
+        welcomeTitle.innerHTML = 'iOS <span class="h1_gradient">Developer</span>';
     } else {
-        welcomeTitle.innerHTML = 'Designer & Web/Mobile <span class="h1_gradient">Developer</span>';
+        welcomeTitle.innerHTML = 'iOS <span class="h1_gradient">Developer</span>';
     }
 }
 

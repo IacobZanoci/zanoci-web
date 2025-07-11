@@ -212,11 +212,26 @@ a:is(:link, :active, :visited).active_nav_link {
     background: linear-gradient(90deg, #353537 0%, #1D1D1F 100%);
 }
 
+.github_works_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 27%;
+    height: 15rem;
+    border-radius: 0.9375rem;
+    background: linear-gradient(90deg, #0A0E23 0%, #000D3D 100%);
+}
+
 .works_company_container_mparking {
-    background: linear-gradient(90deg, #236DF6 0%, #387CFA 100%);
+    background: linear-gradient(90deg, #0043EA 0%, #0634A8 100%);
 }
 
 .disrupt_group_logo {
+    max-width: 75%;
+}
+
+.github_playground_logo {
     max-width: 75%;
 }
 
@@ -489,6 +504,11 @@ a:is(:link, :active, :visited).active_nav_link {
         height: 14rem;
     }
 
+    .github_works_container {
+        width: 30%;
+        height: 14rem;
+    }
+
     .works_company_info {
         max-width: 70%;
     }
@@ -584,6 +604,11 @@ a:is(:link, :active, :visited).active_nav_link {
         height: 14rem;
     }
 
+    .github_works_container {
+        width: 30%;
+        height: 14rem;
+    }
+
     .works_company_info {
         max-width: 70%;
     }
@@ -621,6 +646,11 @@ a:is(:link, :active, :visited).active_nav_link {
     }
 
     .works_company_container {
+        height: auto;
+        width: 30%;
+    }
+
+     .github_works_container {
         height: auto;
         width: 30%;
     }
@@ -804,6 +834,14 @@ a:is(:link, :active, :visited).active_nav_link {
         margin-right: auto;
     }
 
+    .github_works_container {
+        width: 22rem;
+        height: 14rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .works_company_title h2 {
         text-align: center;
     }
@@ -977,6 +1015,10 @@ a:is(:link, :active, :visited).active_nav_link {
 
     /* WORKS SECTION */
     .works_company_container {
+        width: 100%;
+    }
+
+    .github_works_container {
         width: 100%;
     }
 
