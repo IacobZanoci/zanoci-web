@@ -11,8 +11,8 @@ toggleBtn.onclick = function() {
     : 'fa-solid fa-bars'
 }
 
-// Event binding for button click
-$(document).on('click', 'button', function () {
+document.querySelector('.button_email_submit').addEventListener('click', function (e) {
+    e.preventDefault(); // prevent default form submission
     sendMail();
 });
 
@@ -28,13 +28,13 @@ function sendMail() {
     })();
 
     var senderNameInput = document.querySelector("#sendername");
-    var toInput = document.querySelector("#to");
+    var toInput = document.querySelector("#reply_to");
     var subjectInput = document.querySelector("#subject");
     var messageInput = document.querySelector("#message");
 
     var params = {
         sendername: senderNameInput.value,
-        to: toInput.value,
+        reply_to: toInput.value,
         subject: subjectInput.value,
         message: messageInput.value,
     };
